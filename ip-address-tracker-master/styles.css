@@ -1,0 +1,23 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Tag Selectors */
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding-top: 70;
+  padding-bottom: 50;
+}
+
+
+/* Class Selectors */
+.titles {
+  background-image: url("images/pattern-bg.png");
+
+}
