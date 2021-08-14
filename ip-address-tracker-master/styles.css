@@ -1,7 +1,6 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
 
-/* Tag Selectors */
+
+/* TAG SELECTORS */
 
 body {
   margin: 0;
@@ -11,13 +10,78 @@ h1 {
   color: white;
   margin: 0;
   text-align: center;
-  padding-top: 70;
-  padding-bottom: 50;
+  padding-top: 70px;
+  padding-bottom: 50px;
 }
 
+/* CLASS SELECTORS */
 
-/* Class Selectors */
-.titles {
+.search {
+  border-radius: 0.5rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.search-box {
+  width: 45%;
+  height: 40px;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  text-align: center;
+  margin: 0;
+  border: 0;
+}
+
+.search-button {
+  text-align: center;
+  margin: 0;
+  background-image: url("images/search-button.jpg");
+  height: 40px;
+  width: 40px;
+  background-size: contain;
+  border: 0;
+  position: absolute;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.card-header {
+  font-family: 'Source Code Pro', monospace;
+  /* font-size: 0.75em; */
+  color: grey;
+  background-color: white;
+  border: 0;
+}
+
+.card-body {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  font-size: 2.5rem;
+  border-right: 3px solid #c3c2cc;
+  height: 45%;
+}
+
+/* ID SELECTORS */
+#titles {
+  padding-bottom: 100px;
   background-image: url("images/pattern-bg.png");
-
 }
+
+#information {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  left: 15%;
+  right: 15%;
+  /* transform: translate(-50%, 0); */
+  top: 260px;
+  border-radius: 0.5rem;
+}
+
+#map {
+  /* background-image: url("images/temp-map.jpg"); */
+}
+
+#attribution { font-size: 11px; text-align: center; }
+#attribution a { color: hsl(228, 45%, 44%); }

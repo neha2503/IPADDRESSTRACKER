@@ -6,36 +6,52 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link type="text/css" rel="stylesheet" href="styles.css" >
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
   <title>IP Address Tracker</title>
 </head>
 
 <body>
+  <div class="forposition" style="position: relative;">
+    <section id="titles">
+      <h1>IP Address Tracker</h1>
+      <div class="search">
+        <input class="search-box" type="text" placeholder="Search for any IP address or domain">
+        <button class = "search-button" type="button" name="seach"></button>
+      </div>
+    </section>
 
-  <section class="titles">
-    <h1>IP Address Tracker</h1>
-    <input type="text" placeholder="Search for any IP address or domain">
-  </section>
+    <section id="information">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card-header">IP ADDRESS</div>
+            <div class="card-body">193.33.229.22</div>
+          </div>
+          <div class="col">
+            <div class="card-header">LOCATION</div>
+            <div class="card-body">Delhi, India</div>
+          </div>
+          <div class="col">
+            <div class="card-header">TIMEZONE</div>
+            <div class="card-body">IST +5.30</div>
+          </div>
+          <div class="col">
+            <div class="card-header">ISP</div>
+            <div class="card-body">Jio</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section class="information">
-    <table width=70% align="center">
-        <tr>
-          <th>IP Address</th>
-          <th>Location</th>
-          <th>Timezone</th>
-          <th>UTC</th>
-          <th>ISP</th>
-        </tr>
-    </table>
-  </section>
+    <section id="map">
+      <img src="images/temp-map.jpg" alt="temporary map" >
+    </section>
 
-  <section class="map">
-
-  </section>
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    <div id="attribution">
+      <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>. -->
+      Coded by <a href="#">Neha and Eeshita</a>
+    </div>
   </div>
 </body>
 </html>
