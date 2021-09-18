@@ -3,19 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet" href="styles.css" >
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <!-- Leaflet's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-  crossorigin=""/> 
-
-   <!-- Leaflet's JS -->
-   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
+  crossorigin=""/>
+  <!-- Leaflet's JS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- Local CSS -->
+  <link type="text/css" rel="stylesheet" href="styles.css" >
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+  <!-- jQuery's CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Local JS -->
+  <script src="script.js"></script>
   <title>IP Address Tracker</title>
 </head>
 
@@ -24,39 +31,40 @@
     <section id="titles">
       <h1>IP Address Tracker</h1>
       <div class="search">
+        <!-- FORM -->
         <form>
-        <input class="search-box" type="text" placeholder="Search for any IP address or domain">
-        <button class = "search-button" type="button" name="seach"></button>
-      </form>
+          <input class="search-box" type="text" placeholder="Search for any IP address or domain">
+          <button class = "search-button" type="submit" name="seach"></button>
+        </form>
       </div>
     </section>
 
     <section id="information">
-      <div class="container">
+      <div class="data">
         <div class="row">
           <div class="col">
             <div class="card-header">IP ADDRESS</div>
-            <div class="card-body">193.33.229.22</div>
+            <div class="card-body card-ip-text">193.33.229.22</div>
           </div>
           <div class="col">
             <div class="card-header">LOCATION</div>
-            <div class="card-body">Delhi, India</div>
+            <div class="card-body card-loc-text">Delhi, India</div>
           </div>
           <div class="col">
             <div class="card-header">TIMEZONE</div>
-            <div class="card-body">IST +5.30</div>
+            <div class="card-body card-ist-text">IST +5.30</div>
           </div>
           <div class="col">
             <div class="card-header">ISP</div>
-            <div class="card-body">Jio</div>
+            <div class="card-body card-isp-text">Jio</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="map">
-      <img src="images/temp-map.jpg" alt="temporary map" >
-    </section>
+    <div id="mapid">
+      <!-- <img src="images/temp-map.jpg" alt="temporary map" > -->
+    </div>
 
     <div id="attribution">
       <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.

@@ -79,8 +79,11 @@ h1 {
   border-radius: 0.5rem;
 }
 
-#map {
-  /* background-image: url("images/temp-map.jpg"); */
+#mapid {
+  width: 600px;
+  height: 400px;
+  /* position: relative; */
+  /* outline: none; */
 }
 
 #attribution { font-size: 11px; text-align: center; }
