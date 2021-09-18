@@ -1,5 +1,4 @@
 $(document).ready(function(){
-$("h1").text("Hello");
 var api_key="at_js9ePvEApOubx3TuhLWH67GGb41sq";
 var ip;
 // position icon
@@ -36,7 +35,7 @@ $.get("https://geo.ipify.org/api/v1?apiKey="+api_key+"&ipAddress="+ip,function(d
     $('.card-ip-text').html(data.ip);
 
     $('.card-loc-text').html(data.location.city + ', ' + data.location.region + ' ' + data.location.postalCode);
-ss
+
     $('.card-ist-text').html('IST' + data.location.timezone);
 
     $('.card-isp-text').html(data.isp);

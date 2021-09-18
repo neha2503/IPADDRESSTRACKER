@@ -48,7 +48,7 @@ h1 {
 
 .card-header {
   font-family: 'Source Code Pro', monospace;
-  /* font-size: 0.75em; */
+  font-size: 0.75em;
   color: grey;
   background-color: white;
   border: 0;
@@ -57,7 +57,7 @@ h1 {
 .card-body {
   font-family: 'Inconsolata', monospace;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 1.25rem;
   border-right: 3px solid #c3c2cc;
   height: 45%;
 }
@@ -70,7 +70,7 @@ h1 {
 
 #information {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   background-color: white;
   left: 15%;
   right: 15%;
@@ -80,9 +80,9 @@ h1 {
 }
 
 #mapid {
-  width: 600px;
   height: 400px;
-  /* position: relative; */
+  position: relative;
+  z-index: 1;
   /* outline: none; */
 }
 
