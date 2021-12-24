@@ -45,3 +45,21 @@ $.get("https://geo.ipify.org/api/v1?apiKey="+api_key+"&ipAddress="+ip,function(d
 });
 });
 });
+
+var names=document.querySelector('.names');
+var desc =document.querySelector('.desc');
+var temp=document.querySelector('.tempval')
+
+$('form').submit(function(){
+    fetch('http://api.openweathermap.org/data/2.5/weather?q='+data.location.city.value+'&APPID=a863866c91b3f842a1b13b78759f5e0e').then(
+        response => response.json()).then(data=>{var namevalue=data['name'];
+        var tempval=data['main']['temp'];
+        var descvalue=data['weather'][0]['description'];
+    
+        names.innerHTML=namevalue;
+        temp.innerHTML=tempval;
+        desc.innerHTML=descvalue;
+    
+    })
+    .catch(err=>alert("wrong place"))
+})
