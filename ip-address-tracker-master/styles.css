@@ -1,5 +1,4 @@
 
-
 /* TAG SELECTORS */
 
 body {
@@ -62,10 +61,36 @@ h1 {
   height: 45%;
 }
 
+.weathermap {
+  position: absolute;
+}
+
+.icond {
+  height: 40px;
+  width: 50px;
+}
+
+.weathertable {
+  color: white;
+  font-family: 'Abel', sans-serif;
+  margin: 15px;
+  font-size: 20px;
+}
+
+.tdpad {
+  margin: 5px;
+  padding: 6px;
+  padding-top: 0;
+}
+
+.temp {
+  font-size: 30px;
+}
+
 /* ID SELECTORS */
 #titles {
   padding-bottom: 100px;
-  background-image: url("images/pattern-bg.png");
+  background-image: url("images/pattern-bg.jpg");
 }
 
 #information {

@@ -23,12 +23,28 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Local JS -->
   <script src="script.js"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
   <title>IP Address Tracker</title>
 </head>
 
 <body>
   <div class="forposition" style="position: relative;">
     <section id="titles">
+      <div class="weathermap">
+        <table class="weathertable">
+          <tr>
+            <td class="temp tdpad"> </td>
+            <td class="tdpad">
+              <div class="iconweather"></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="wind tdpad"></td>
+            <td class="desc tdpad"></td>
+          </tr>
+        </table>
+      </div>
       <h1>IP Address Tracker</h1>
       <div class="search">
         <!-- FORM -->
@@ -43,10 +59,6 @@
       <div class="data">
         <div class="row">
           <div class="col">
-            <p class="names"></p>
-            <p class="desc">
-              <p class="temp"></p>
-            </p>
             <div class="card-header">IP ADDRESS</div>
             <div class="card-body card-ip-text">193.33.229.22</div>
           </div>
@@ -74,6 +86,7 @@
       <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>. -->
       Coded by <a href="#">Neha and Eeshita</a>
+      <a target="_blank" href="https://icons8.com/icon/NdiAp2ePuk20/cloud-lightning">Cloud Lightning</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     </div>
   </div>
 </body>
