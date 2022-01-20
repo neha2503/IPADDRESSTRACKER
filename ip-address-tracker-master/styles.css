@@ -111,5 +111,15 @@ h1 {
   /* outline: none; */
 }
 
-#attribution { font-size: 11px; text-align: center; }
-#attribution a { color: hsl(228, 45%, 44%); }
+#attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: darkblue;
+  color: white;
+}
+#attribution a {
+  color: lightblue;
+}
+#attribution h2 {
+  font-size: 0.75rem;
+}
