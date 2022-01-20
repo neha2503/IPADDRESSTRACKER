@@ -46,7 +46,7 @@ $('form').submit(function(e) {
         mappos.setView([data.location.lat, data.location.lng], 15);
         marker = new L.marker([data.location.lat, data.location.lng], {icon: iconmarker}).addTo(mappos);
 
-        fetch('http://api.openweathermap.org/data/2.5/weather?units=metric&q='+ data.location.city +'&APPID=a863866c91b3f842a1b13b78759f5e0e')
+        fetch('https://api.openweathermap.org/data/2.5/weather?units=metric&q='+ data.location.city +'&APPID=a863866c91b3f842a1b13b78759f5e0e')
         .then(response => response.json())
         .then(dt=> {
             console.log(dt);
